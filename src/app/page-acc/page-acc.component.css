@@ -1,0 +1,20 @@
+:root{--blue:#0061d8;}.contenu{height: 100vh;overflow-x: hidden; margin: 0; padding: 0;}.start{overflow: hidden; min-height: 90vh;margin: 0;padding: 0;background:url('../../assets/Images/Study.jpg');background-size: cover;background-repeat: no-repeat;background-position: center; position: relative;}.start::before{content:'';position: absolute;top: 0;width: 100vw;min-height: 100%;background: linear-gradient(to right,rgb(138, 0, 138,0.8) 0%,rgb(0, 81, 255,0.6)70%,rgba(255, 255, 255, 0.1)100%);} .start-title{width: 500px; min-height: 70vh; margin: 0; padding: 50px; position: relative;}.start-title h1{color: rgb(102, 0, 102); font-family:"Nunito";}.start-title button{width:100px;height:60px;background-color: white; border-radius: 20px;border: 0.5px solid var(--blue); color: var(--blue);}.start-title button:hover{box-shadow: 0 0 10px rgba(0, 74, 211, 0.8), 0 0 20px rgba(0, 74, 211, 0.6);}.second{min-height: 250px;}.card{height: 500px;border-radius: 20px;}.card-img-1{width: 300px;height: 200px;margin: auto;background: url('../../assets/Images/Embauche.jpg');margin-top: 20px;background-size: cover; background-repeat: no-repeat; background-position:center;border-radius: 50%;}.card-img-2{ width: 300px;height: 200px;margin: auto;background: url('../../assets/Images/Phone Study.jpg');margin-top: 20px;background-size: cover;background-repeat: no-repeat;background-position:top;border-radius: 50%;}.card-img-3{width: 300px;height: 200px;margin: auto;background: url('../../assets/Images/OIP.jpg');margin-top: 20px;background-size: cover;background-repeat: no-repeat;background-position:top;border-radius: 50%;}.three{min-height: 70vh;background-color: rgb(228, 228, 228);}.list-img{margin: auto;}.item{width: 80%;margin: auto;}.plus{height: 50px;border-radius: 20px;background-color: var(--blue);color:white;transition: box-shadow 0.5s;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}.plus:hover{text-decoration: none; box-shadow: 0 0 10px rgba(0, 74, 211, 0.8), 0 0 20px rgba(0, 74, 211, 0.6);}button{transition: box-shadow 0.5s;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}button:hover{box-shadow: 0 0 10px rgba(0, 74, 211, 0.8), 0 0 20px rgba(0, 74, 211, 0.6);}.fourth{min-height: 50vh;}.liste-1{width: 150vw;overflow: auto;animation: toLeft 40s linear infinite;transform: translateX(80%);}.theme-liste li{display: inline-block;}.theme-liste li a{width: auto;height: 40px;border-radius: 20px;border: 1px solid white;margin: 5px;}.theme-liste li a:hover{background-color: var(--blue);color: white;}.liste-2{width: 200vw;overflow: hidden;animation:toRight 40s linear infinite;transform: translateX(-80%);}.liste-3{width: 200vw;overflow: hidden;animation:toRight2 40s linear infinite;transform: translateX(-80%);}@keyframes toRight{0%{transform: translateX(-80%);}100%{transform: translateX(100%);}}@keyframes toLeft{0%{transform: translateX(80%);}100%{ transform:translateX(-100%)}}@keyframes toRight2{0%{transform: translateX(-20%);}100%{ transform:translateX(100%)}}.five{width: 100%;min-height: 75vh;position: relative;margin: 0;padding: 0;}.content{min-height: 75vh;display: inline-block;margin: 0;color: white;}.message{height: 60px; border-radius: 20px;position: absolute;right: 0;margin-right: 50px;background-color: #0061d8;}.theme-liste{width: 100%;height: auto;overflow: hidden;}.content p{vertical-align: baseline;justify-content: center;text-align: justify;width: 80%;margin: auto;}@media screen and(max-width:748px) {.start-title{width: 100%;}}
+.six{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgb(0, 140, 255) 0%,rgb(114, 0, 114) 100%);
+    padding-top: 20px;
+}
+.seven{
+    width: 100%;
+}
+@media screen and (max-width:500px){
+    .start-title{
+        width: 100vw;
+        margin: 50px;
+    }
+    
+.certificate img{
+    width: 100%;
+}
+}

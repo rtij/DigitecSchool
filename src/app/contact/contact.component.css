@@ -1,0 +1,45 @@
+.contenu{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+form{
+    width: 80%;
+    border-radius: 20px;
+    margin: auto;
+    backdrop-filter: blur(1px);
+}
+textarea:focus ,input:focus{
+    outline: none;
+    box-shadow: 0 0 10px rgb(0, 132, 255);
+}
+
+.Sign-btn{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid var(--blue);
+    position: relative;
+    transition: box-shadow 0.5s ease;
+}
+.Sign-btn:hover{
+    box-shadow: 0 0 10px rgb(0, 132, 255,0.8),0 0 20px rgb(0, 132, 255,0.8);
+    color: white;
+}
+.Sign-btn::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    z-index: -1;
+    transition: width 0.5s ease;
+    background-color: var(--blue);
+}
+.Sign-btn:hover::before{
+    width: 100%;
+}

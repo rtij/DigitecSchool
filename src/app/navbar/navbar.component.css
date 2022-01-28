@@ -1,0 +1,129 @@
+
+.log{
+    background-color: var(--blue);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0);
+    transition: box-shadow 0.5s;
+    text-decoration: none;
+}
+.navbar-input{
+    position: relative;
+}
+.navbar-input input{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.473);
+    border: none;
+    padding-left: 20px;
+    padding-top: 0;
+}
+.navbar-input input:focus{
+    outline: none;
+    box-shadow:  0 0 5px var(--blue);
+    border-radius: 20px;
+}
+.navbar-input:hover{
+    outline: none;
+    box-shadow:  0 0 5px var(--blue);
+    border-radius: 20px;
+}
+.search-icon{
+    margin-left: 50px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    background-color: var(--blue);
+    top: 0;
+    right: 0;
+    color: white;
+    padding-top: 15px;
+    padding-left: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.Linkactive{
+    border:1px solid var(--blue);
+    color: var(--blue);
+    border-radius: 20px;
+    background-color: var(--blue);
+    color: white;
+}
+ul li a:focus{
+    border:1px solid var(--blue);
+    color: var(--blue);
+    border-radius: 20px;
+    background-color: var(--blue);
+    color: white;    
+    vertical-align: middle;
+    overflow: hidden;
+}
+.log:hover{
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 8px var(--blue), 0 0 12px var(--blue);
+}
+.log:focus{
+    border:1px solid var(--blue);
+    color: var(--blue);
+    border-radius: 20px;
+    background-color: var(--blue);
+    color: white;
+}
+.image{
+    width: 80px;
+    height: 80px;
+    background: url('../../assets/Images/Digitec-schoolIcon.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 0;
+    margin: 0;
+}
+.image a{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+}
+.navbar{
+    width: 100%;
+    min-height: 110px;
+    padding-top: 15px;
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    color:var(--blue);
+    margin: 0;
+    backdrop-filter: blur(1px);
+}
+.navbar ul li a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbar ul li a:hover{
+    border:0.5px solid var(--blue);
+    color: white;
+    background-color: transparent;
+    border-radius: 20px;
+}
+.navbar ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    margin-left: 0;
+    background-color: var(--blue);
+    border-radius: 20px;
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+.navbar ul li a:hover::before{
+    width: 100%;
+    margin-left: 0;
+}

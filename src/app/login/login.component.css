@@ -1,0 +1,47 @@
+:root{--blue:#0061d8;}
+.contenu{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.log{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    backdrop-filter: blur(1px);
+}
+.login-btn, .Sign-btn{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid var(--blue);
+    position: relative;
+    transition: box-shwadow;
+}
+.login-btn:hover,.Sign-btn:hover{
+    color: white;   
+    box-shadow: 0 0 10px rgb(0, 132, 255,0.8),0 0 20px rgb(0, 132, 255,0.8);
+}
+.login-btn::before,.Sign-btn::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    z-index: -1;
+    transition: width 0.5s ease;
+    background-color: var(--blue);
+}
+.login-btn:hover::before,.Sign-btn:hover::before{
+    width: 100%;
+}
+.details{
+    backdrop-filter: blur(1px);
+}
